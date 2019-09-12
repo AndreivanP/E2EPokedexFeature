@@ -1,0 +1,491 @@
+[
+  {
+    "description": "     As Pokédex user\n     I want to be able search the Pokémon databe by name or number\n     So I can find out my Pokémons",
+    "keyword": "Feature",
+    "name": "US01 - Search Pokémon by name or number",
+    "line": 1,
+    "id": "us01---search-pokémon-by-name-or-number",
+    "tags": [],
+    "uri": "..\\features\\US01_Search.feature",
+    "elements": [
+      {
+        "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-a-valid-name",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Search Pokémon by a valid name",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6966000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I type the Pokemon name 'Kakuna'",
+            "match": {
+              "location": "us01_Search.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3410000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see on the search results just the 'Kakuna'",
+            "match": {
+              "location": "us01_Search.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2975000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-a-valid-name",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Search Pokémon by a valid name",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I type the Pokemon name 'Dragonair'",
+            "match": {
+              "location": "us01_Search.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3666000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see on the search results just the 'Dragonair'",
+            "match": {
+              "location": "us01_Search.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 696000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-an-invalid-name",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Search Pokémon by an invalid name",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1696000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I type the Pokemon name 'asdfgh'",
+            "match": {
+              "location": "us01_Search.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the message 'No Pokémon Matched Your Search!' on the search results",
+            "match": {
+              "location": "us01_Search.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 378000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-an-invalid-name",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Search Pokémon by an invalid name",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1580000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I type the Pokemon name '123456678'",
+            "match": {
+              "location": "us01_Search.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the message 'No Pokémon Matched Your Search!' on the search results",
+            "match": {
+              "location": "us01_Search.js:45"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 389000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    +No Pokémon Matched Your Search!\n\n    at World.<anonymous> (C:\\git\\Pokedex\\Test\\steps\\us01_Search.js:46:75)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "     As Pokédex user\n     I want to be able get randon Pokemons\n     So I choose which Pokemon I want",
+    "keyword": "Feature",
+    "name": "US02 - Load randon Pokemons",
+    "line": 1,
+    "id": "us02---load-randon-pokemons",
+    "tags": [],
+    "uri": "..\\features\\US02_LoadRandon.feature",
+    "elements": [
+      {
+        "id": "us02---load-randon-pokemons;generate-randon-pokemons",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Generate randon Pokemons",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1679000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I generate randons Pokemons",
+            "match": {
+              "location": "us02_LoadRandon.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3988000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see '12' randons Pokemons",
+            "match": {
+              "location": "us02_LoadRandon.js:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1767000000,
+              "error_message": "AssertionError: expected 0 to equal '12'\n    at World.<anonymous> (C:\\git\\Pokedex\\Test\\steps\\us02_LoadRandon.js:31:69)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us02---load-randon-pokemons;load-more-pokemons",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Load more Pokemons",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1718000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I select the option to load more Pokemons",
+            "match": {
+              "location": "us02_LoadRandon.js:26"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10099000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(css selector, *[id=\"cookie-dismisser\"])\n    at elementArrayFinder.getWebElements.then (C:\\Users\\andre\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27)\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\andre\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as click] (C:\\Users\\andre\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as click] (C:\\Users\\andre\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at PokePage.surprisemeBtnClick (C:\\git\\Pokedex\\Test\\pages\\pokePage.js:76:33)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see '24' randons Pokemons",
+            "match": {
+              "location": "us02_LoadRandon.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "     As Pokédex user\n     I want to be able select a specific Pokemon\n     So I can see his details",
+    "keyword": "Feature",
+    "name": "US01 - See Pokemon details",
+    "line": 1,
+    "id": "us01---see-pokemon-details",
+    "tags": [],
+    "uri": "..\\features\\US03_PokemonDetails.feature",
+    "elements": [
+      {
+        "id": "us01---see-pokemon-details;generate-randon-pokemons",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Generate randon Pokemons",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I select the Pokemon 'Venusaur'",
+            "match": {
+              "location": "us03_PokemonDetails.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6708000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should 'Venusaur' information on a new page",
+            "match": {
+              "location": "us03_PokemonDetails.js:42"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2185000000,
+              "error_message": "AssertionError: expected 'Bulbasaur #001' to include 'Venusaur'\n    at World.<anonymous> (C:\\git\\Pokedex\\Test\\steps\\us03_PokemonDetails.js:43:81)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
