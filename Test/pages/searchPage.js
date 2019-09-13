@@ -30,7 +30,7 @@ class SearchPage extends BasePage {
     }
 
     async hitSearchBtn() { 
-        this.scrollToTop();    
+        this.scrollUp();    
         await this.waitElementClickable(this.searchBtn);   
         await this.searchBtn.click();       
     }

@@ -9,7 +9,6 @@ Scenario: Generate randon Pokemons
     When I generate randons Pokemons    
     Then I should see '12' randons Pokemons
 
-
 @REGRESSION
 Scenario: Load more Pokemons
     Given I'm on the Pokedex search page

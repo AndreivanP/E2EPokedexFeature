@@ -22,6 +22,16 @@ export default class BasePage {
             );
     }
 
+    async waitElementInvisible(item, timeout = 10000) {
+        const EXPECTEDCONDITIONS = protractor.ExpectedConditions;
+        return await browser.wait(
+            EXPECTEDCONDITIONS.invisibilityOf(item), timeout).catch(
+                function (error) {
+                    console.log("waitElementInvisible Wait error:", error);
+                }
+            );
+    }
+
     async waitElementPresence(item, timeout = 10000) {
         const EXPECTEDCONDITIONS = protractor.ExpectedConditions;
         return await browser.wait(
@@ -60,9 +70,15 @@ export default class BasePage {
         });
     }
 
-    async scrollToTop() {
+    async scrollUp() {
         await browser.executeScript('window.scrollTo(0,0);').then(function(){
             console.log('++++++SCROLLED UP+++++');
+        });
+    }
+
+    async scrollDown() {
+        await browser.executeScript('window.scrollTo(0,10000);').then(function(){
+            console.log('++++++SCROLLED DOWN+++++');
         });
     }
 }

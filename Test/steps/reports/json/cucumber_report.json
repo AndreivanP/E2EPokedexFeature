@@ -31,7 +31,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7040000000
+              "duration": 5034000000
             }
           },
           {
@@ -40,11 +40,11 @@
             "line": 9,
             "name": "I generate randons Pokemons",
             "match": {
-              "location": "us02_LoadRandon.js:22"
+              "location": "us02_LoadRandon.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 954000000
+              "duration": 4158000000
             }
           },
           {
@@ -53,12 +53,11 @@
             "line": 10,
             "name": "I should see '12' randons Pokemons",
             "match": {
-              "location": "us02_LoadRandon.js:30"
+              "location": "us02_LoadRandon.js:34"
             },
             "result": {
-              "status": "failed",
-              "duration": 2148000000,
-              "error_message": "AssertionError: expected 0 to equal '12'\n    at World.<anonymous> (C:\\git\\E2EPokedexFeature\\Test\\steps\\us02_LoadRandon.js:31:69)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+              "status": "passed",
+              "duration": 53000000
             }
           },
           {
@@ -69,7 +68,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "us02---load-randon-pokemons;load-more-pokemons",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Load more Pokemons",
+        "tags": [
+          {
+            "name": "@REGRESSION1",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommunSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select the option to load more Pokemons",
+            "match": {
+              "location": "us02_LoadRandon.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2520000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see '24' randons Pokemons",
+            "match": {
+              "location": "us02_LoadRandon.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

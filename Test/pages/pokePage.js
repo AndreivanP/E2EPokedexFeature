@@ -18,10 +18,11 @@ class PokePage extends BasePage {
         this.pokemonName = element(by.css(`${this.pokemonClass} h5`));
         this.messagePokeNotFound = element(by.css('.alert.alert-error h3'));   
         this.surprisemeBtn = element(by.id('shuffle'));
-        this.pokemonAmount = element.all(by.css('.animating a')).count();
+        this.pokemonAmount = element.all(by.css(this.pokemonClass));
         this.cookieOk = element(by.id('cookie-dismisser'));    
         this.loadMoreBtn = element(by.id('loadMore'));
         this.pokemonFigure = element(by.css('.animating figure'));
+        this.loader = element(by.css('.loader'));
     }
 
     // Get the first Pokemon name
@@ -41,12 +42,15 @@ class PokePage extends BasePage {
     // Hit the Surprise Me button
     async surprisemeBtnClick() {
         await this.waitElementClickable(this.surprisemeBtn);
-        await this.surprisemeBtn.click();        
+        await this.surprisemeBtn.click(); 
+        await this.waitElementInvisible(this.loader);       
     }
 
     async loadMoreBtnClick() {
-        this.surprisemeBtnClick();
-        await this.loadMoreBtn.click();        
+        await this.surprisemeBtnClick();
+        this.scrollDown();
+        await this.loadMoreBtn.click();
+        await this.waitElementInvisible(this.loader);        
     }
 
     // Count the amount of Pokemons present on the DOM
