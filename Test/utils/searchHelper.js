@@ -13,16 +13,15 @@ class SearchHelper {
         var start = Date.now();
         let elementCount = null;
         let repeat = true;
-         while (repeat) {
-            elementCount = element.all(by.css(elementClass)).count();
+         while (repeat) {            
+            elementCount = await element.all(by.css(elementClass)).count();            
             if (Date.now() - start >= timeout) {
-                console.log("Timeout reached finding " + elementCount + " elements in waitElementCount for class: " + className);
+                console.log("Timeout reached finding " + elementCount + " elements in waitElementCount for class: " + elementClass);
                 return "timeout";
             }
             if (elementCount == 1) {
                repeat = false;
-            }
-            break;           
+            }                   
         }        
         return true;
     }

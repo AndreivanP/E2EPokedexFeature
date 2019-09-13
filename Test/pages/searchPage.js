@@ -14,15 +14,27 @@ class SearchPage extends BasePage {
     constructor ()  {
         super();
         this.searchField = element(by.id('searchInput'));
-        this.searchBtn = element(by.id('search'));        
+        this.searchBtn = element(by.css('.button.button-search'));        
     }
 
-    // Search for a Pokemon
+    // Search for a Pokemon by enter the name and hit the search button
     async searchPokemon(pokemonName) {        
         await this.waitElementClickable(this.searchField);
         await this.searchField.sendKeys(pokemonName);
-        return this.searchBtn.click();
+        await this.searchBtn.click();
     }
+
+    async enterPokemonName(pokemonName) {        
+        await this.waitElementClickable(this.searchField);
+        await this.searchField.sendKeys(pokemonName);        
+    }
+
+    async hitSearchBtn() { 
+        this.scrollToTop();    
+        await this.waitElementClickable(this.searchBtn);   
+        await this.searchBtn.click();       
+    }
+    
 
 }
 

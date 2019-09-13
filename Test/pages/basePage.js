@@ -9,29 +9,7 @@
 
 export default class BasePage {
     constructor() {
-		
-    /**
-     * Wrappers for expected conditions 
-     * @returns {ExpectedCondition}
-     */
-    isVisible(locator) {
-        return protractor.ExpectedConditions.visibilityOf(locator);
-    }
 
-    isNotVisible(locator) {
-        return protractor.ExpectedConditions.invisibilityOf(locator);
-    }
-
-    inDom(locator) {
-        return protractor.ExpectedConditions.presenceOf(locator);
-    }
-
-    notInDom(locator) {
-        return protractor.ExpectedConditions.stalenessOf(locator);
-    }
-
-    isClickable(locator) {
-        return protractor.ExpectedConditions.elementToBeClickable(locator);
     }
 
     async waitElementClickable(item, timeout = 10000) {
@@ -44,16 +22,14 @@ export default class BasePage {
             );
     }
 
-    hasText(locator, text) {
-        return protractor.ExpectedConditions.textToBePresentInElement(locator, text);
-    }
-
-    and(arrayOfFunctions) {
-        return protractor.ExpectedConditions.and(arrayOfFunctions);
-    }
-
-    titleIs(title) {
-        return protractor.ExpectedConditions.titleIs(title);
+    async waitElementPresence(item, timeout = 10000) {
+        const EXPECTEDCONDITIONS = protractor.ExpectedConditions;
+        return await browser.wait(
+            EXPECTEDCONDITIONS.presenceOf(item), timeout).catch(
+                function (error) {
+                    console.log("waitElementPresence Wait error:", error);
+                }
+            );
     }
 
     /**
@@ -81,6 +57,12 @@ export default class BasePage {
             browser.close();
             // the parent should be 2 less than the length of all found window handlers
             browser.switchTo().window(handles.length - 2);
+        });
+    }
+
+    async scrollToTop() {
+        await browser.executeScript('window.scrollTo(0,0);').then(function(){
+            console.log('++++++SCROLLED UP+++++');
         });
     }
 }

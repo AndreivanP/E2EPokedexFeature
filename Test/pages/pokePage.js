@@ -9,12 +9,13 @@
 
 import BasePage from './basePage';
 import {element, browser} from 'protractor';
+import searchHelper from '../utils/searchHelper';
 
 class PokePage extends BasePage {
     constructor () {
         super();
-        this.pokemonClass = 'pokemon-info'
-        this.pokemonName = element(by.css(`.${this.pokemonClass} h5`));
+        this.pokemonClass = '.pokemon-info'
+        this.pokemonName = element(by.css(`${this.pokemonClass} h5`));
         this.messagePokeNotFound = element(by.css('.alert.alert-error h3'));   
         this.surprisemeBtn = element(by.id('shuffle'));
         this.pokemonAmount = element.all(by.css('.animating a')).count();
@@ -24,23 +25,22 @@ class PokePage extends BasePage {
     }
 
     // Get the first Pokemon name
-    getPokemonName(pokemonName) {
-        this.inDom( this.pokemonName);
-        let name = this.pokemonName.getText(pokemonName);
+    async getPokemonName() {
+        await this.waitElementPresence( this.pokemonName);       
+        let name = await this.pokemonName.getText();
         return name; 
     }
     
     // Get the message when no Pokemon is found
-    getMessageNotFound() {
-        this.inDom( this.messagePokeNotFound);
+    async getMessageNotFound() {
+        await this.waitElementClickable(this.messagePokeNotFound);   
         let message = this.messagePokeNotFound.getText();
         return message; 
     }  
     
     // Hit the Surprise Me button
     async surprisemeBtnClick() {
-        await this.waitElementClickable(this.cookieOk);
-        await this.cookieOk.click();
+        await this.waitElementClickable(this.surprisemeBtn);
         await this.surprisemeBtn.click();        
     }
 
