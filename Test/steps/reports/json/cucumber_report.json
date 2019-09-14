@@ -1,6 +1,6 @@
 [
   {
-    "description": "    As Pokédex user\n    I want to be able search the Pokémon databe by name or number\n    So I can find out my Pokémons",
+    "description": "    As Pokédex user\n    I want be able to search the Pokémon databe by name or number\n    So I can find out my Pokémons",
     "keyword": "Feature",
     "name": "US01 - Search Pokémon by name or number",
     "line": 1,
@@ -11,12 +11,12 @@
       {
         "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-a-valid-name",
         "keyword": "Scenario",
-        "line": 17,
+        "line": 20,
         "name": "Search Pokémon by a valid name",
         "tags": [
           {
             "name": "@REGRESSION",
-            "line": 9
+            "line": 13
           }
         ],
         "type": "scenario",
@@ -24,40 +24,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 11,
+            "line": 8,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 5239000000
+              "duration": 7381000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
+            "line": 15,
             "name": "I search for the Pokemon name 'Kakuna'",
             "match": {
               "location": "us01_Search.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 4334000000
+              "duration": 7890000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
+            "line": 16,
             "name": "I should see on the search results just the 'Kakuna'",
             "match": {
               "location": "us01_Search.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 811000000
+              "duration": 764000000
             }
           },
           {
@@ -68,7 +68,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           }
         ]
@@ -76,12 +76,12 @@
       {
         "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-a-valid-name",
         "keyword": "Scenario",
-        "line": 18,
+        "line": 21,
         "name": "Search Pokémon by a valid name",
         "tags": [
           {
             "name": "@REGRESSION",
-            "line": 9
+            "line": 13
           }
         ],
         "type": "scenario",
@@ -89,40 +89,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 11,
+            "line": 8,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1760000000
+              "duration": 3177000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
+            "line": 15,
             "name": "I search for the Pokemon name 'Dragonair'",
             "match": {
               "location": "us01_Search.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 2487000000
+              "duration": 1586000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
+            "line": 16,
             "name": "I should see on the search results just the 'Dragonair'",
             "match": {
               "location": "us01_Search.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 551000000
+              "duration": 685000000
             }
           },
           {
@@ -141,12 +141,12 @@
       {
         "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-an-invalid-name",
         "keyword": "Scenario",
-        "line": 28,
+        "line": 30,
         "name": "Search Pokémon by an invalid name",
         "tags": [
           {
             "name": "@REGRESSION",
-            "line": 20
+            "line": 23
           }
         ],
         "type": "scenario",
@@ -154,40 +154,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 8,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1209000000
+              "duration": 2346000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
+            "line": 25,
             "name": "I search for the Pokemon name 'asdfgh'",
             "match": {
               "location": "us01_Search.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 2371000000
+              "duration": 1721000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 26,
             "name": "I should see a message on the search results",
             "match": {
               "location": "us01_Search.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 430000000
+              "duration": 683000000
             }
           },
           {
@@ -198,7 +198,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           }
         ]
@@ -206,12 +206,12 @@
       {
         "id": "us01---search-pokémon-by-name-or-number;search-pokémon-by-an-invalid-name",
         "keyword": "Scenario",
-        "line": 29,
+        "line": 31,
         "name": "Search Pokémon by an invalid name",
         "tags": [
           {
             "name": "@REGRESSION",
-            "line": 20
+            "line": 23
           }
         ],
         "type": "scenario",
@@ -219,40 +219,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 8,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 981000000
+              "duration": 2154000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
+            "line": 25,
             "name": "I search for the Pokemon name '123456678'",
             "match": {
               "location": "us01_Search.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 2580000000
+              "duration": 2544000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 26,
             "name": "I should see a message on the search results",
             "match": {
               "location": "us01_Search.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 387000000
+              "duration": 774000000
             }
           },
           {
@@ -262,7 +262,8 @@
               "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -270,16 +271,16 @@
       {
         "id": "us01---search-pokémon-by-name-or-number;search-pokémon-after-use-other-button",
         "keyword": "Scenario",
-        "line": 33,
+        "line": 35,
         "name": "Search Pokémon after use other button",
         "tags": [
           {
             "name": "@REGRESSION",
-            "line": 32
+            "line": 34
           },
           {
             "name": "@FAILING",
-            "line": 32
+            "line": 34
           }
         ],
         "type": "scenario",
@@ -287,66 +288,66 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 34,
+            "line": 8,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 534000000
+              "duration": 1919000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 35,
+            "line": 36,
             "name": "I enter the Pokemon name 'Charmander'",
             "match": {
               "location": "us01_Search.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 397000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "I use some other page button",
-            "match": {
-              "location": "us01_Search.js:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 907000000
+              "duration": 497000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 37,
+            "name": "I use some other page button",
+            "match": {
+              "location": "us01_Search.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
             "name": "I apply my search",
             "match": {
               "location": "us01_Search.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 481000000
+              "duration": 826000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 39,
             "name": "I should see on the search results just the 'Charmander'",
             "match": {
               "location": "us01_Search.js:52"
             },
             "result": {
               "status": "failed",
-              "duration": 10131000000,
+              "duration": 10106000000,
               "error_message": "AssertionError\n    + expected - actual\n\n    -Bulbasaur\n    +Charmander\n\n    at World.<anonymous> (C:\\git\\E2EPokedexFeature\\Test\\steps\\us01_Search.js:54:71)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
             }
           },
@@ -365,7 +366,7 @@
     ]
   },
   {
-    "description": "     As Pokédex user\n     I want to be able get randon Pokemons\n     So I choose which Pokemon I want",
+    "description": "     As Pokédex user\n     I want be able to get randon Pokemons\n     So I choose which Pokemon I want",
     "keyword": "Feature",
     "name": "US02 - Load randon Pokemons",
     "line": 1,
@@ -392,11 +393,11 @@
             "line": 8,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 559000000
+              "duration": 728000000
             }
           },
           {
@@ -409,7 +410,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1458000000
+              "duration": 1742000000
             }
           },
           {
@@ -422,7 +423,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 41000000
             }
           },
           {
@@ -457,11 +458,11 @@
             "line": 14,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 545000000
+              "duration": 1169000000
             }
           },
           {
@@ -474,7 +475,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2366000000
+              "duration": 2806000000
             }
           },
           {
@@ -487,7 +488,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 93000000
             }
           },
           {
@@ -506,16 +507,16 @@
     ]
   },
   {
-    "description": "     As Pokédex user\n     I want to be able select a specific Pokemon\n     So I can see his details",
+    "description": "     As Pokédex user\n     I want be able to select a specific Pokemon\n     So I can see his details",
     "keyword": "Feature",
-    "name": "US01 - See Pokemon details",
+    "name": "US03 - See Pokemon details",
     "line": 1,
-    "id": "us01---see-pokemon-details",
+    "id": "us03---see-pokemon-details",
     "tags": [],
     "uri": "..\\features\\US03_PokemonDetails.feature",
     "elements": [
       {
-        "id": "us01---see-pokemon-details;open-the-pokemon-details-page",
+        "id": "us03---see-pokemon-details;open-the-pokemon-details-page",
         "keyword": "Scenario",
         "line": 7,
         "name": "Open the Pokemon details page",
@@ -533,11 +534,11 @@
             "line": 8,
             "name": "I'm on the Pokedex search page",
             "match": {
-              "location": "CommunSteps.js:22"
+              "location": "CommonSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 646000000
+              "duration": 1078000000
             }
           },
           {
@@ -550,20 +551,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6338000000
+              "duration": 6323000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I should 'Venusaur' information on a new page",
+            "name": "I should see 'Venusaur' information on a new page",
             "match": {
               "location": "us03_PokemonDetails.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 512000000
+              "duration": 297000000
             }
           },
           {

@@ -24,6 +24,6 @@ When('I select the Pokemon {string}', async (pokemonName) => {
     await pokePage.pokemonFigureClick();
 });
 
-Then('I should {string} information on a new page', async (pokemonName) => {    
+Then('I should see {string} information on a new page', async (pokemonName) => {    
    expect (await pokeDetailsPage.returnPokemonName()).to.contain(pokemonName);
 });

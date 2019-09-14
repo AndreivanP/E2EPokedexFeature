@@ -1,6 +1,6 @@
 Feature: US02 - Load randon Pokemons
      As Pokédex user
-     I want to be able get randon Pokemons
+     I want be able to get randon Pokemons
      So I choose which Pokemon I want
 
 @REGRESSION
