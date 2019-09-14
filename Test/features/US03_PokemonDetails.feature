@@ -9,17 +9,17 @@ Scenario: Open the Pokemon details page
     When I select the Pokemon 'Venusaur'    
     Then I should see 'Venusaur' information on a new page
 
-@MANUAL
+@REGRESSION
 Scenario: Switch to the next Pokemon
     Given I'm on the Pokedex Pokemon 'Woobat' page 
-    When I switch to the 'next' Pokemon      
-    Then I should see the Pokemon 'Swoobat'
+    When I switch to the next Pokemon      
+    Then I should see 'Swoobat' information on a new page
 
-@MANUAL
+@REGRESSION
 Scenario: Switch to the previous Pokemon
     Given I'm on the Pokedex Pokemon 'Excadrill' page 
-    When I switch to the 'previous' Pokemon      
-    Then I should see the Pokemon 'Excadrill'
+    When I switch to the previous Pokemon      
+    Then I should see 'Drilbur' information on a new page
 
 @MANUAL
 Scenario: Explore more Pokemons

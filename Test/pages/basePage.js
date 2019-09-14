@@ -9,6 +9,12 @@
 
 export default class BasePage {
     constructor() {
+        /**
+        * Webdriver equivalent to hitting Enter/Return key.
+        */
+        this.hitEnter = function () {
+            browser.actions().sendKeys(protractor.Key.ENTER).perform();
+        }
 
     }
 
@@ -43,13 +49,6 @@ export default class BasePage {
     }
 
     /**
-     * Webdriver equivalent to hitting Enter/Return key.
-     */
-    async hitEnter() {
-        await browser.actions().sendKeys(protractor.Key.ENTER).perform();
-    }
-
-    /**
      * switches focus to a new (last) window
      */
     async switchToNewWindow() {
@@ -71,13 +70,13 @@ export default class BasePage {
     }
 
     async scrollUp() {
-        await browser.executeScript('window.scrollTo(0,0);').then(function(){
+        await browser.executeScript('window.scrollTo(0,0);').then(function () {
             console.log('++++++SCROLLED UP+++++');
         });
     }
 
     async scrollDown() {
-        await browser.executeScript('window.scrollTo(0,10000);').then(function(){
+        await browser.executeScript('window.scrollTo(0,10000);').then(function () {
             console.log('++++++SCROLLED DOWN+++++');
         });
     }

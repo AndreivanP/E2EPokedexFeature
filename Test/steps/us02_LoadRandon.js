@@ -8,23 +8,22 @@
 */
 
 import pokePage from '../pages/pokePage';
-import {Given, When, Then, setDefaultTimeout} from 'cucumber';
+import { When, Then, setDefaultTimeout } from 'cucumber';
 import { expect } from "chai";
-import { browser } from 'protractor';
 
 setDefaultTimeout(75000);
 
-When('I generate randons Pokemons', async () => {    
+When('I generate randons Pokemons', async () => {
     await pokePage.surprisemeBtnClick();
 });
 
-When('I select the option to load more Pokemons', async () => {    
+When('I select the option to load more Pokemons', async () => {
     await pokePage.loadMoreBtnClick();
 });
 
 Then('I should see {string} randons Pokemons', async (pokemonNumber) => {
     let pokeAmount = await pokePage.pokemonAmount.count()
     expect(pokeAmount.toString()).to.equals(pokemonNumber);
-    
+
 })
 

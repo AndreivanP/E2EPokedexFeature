@@ -31,7 +31,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7381000000
+              "duration": 5808000000
             }
           },
           {
@@ -40,11 +40,11 @@
             "line": 15,
             "name": "I search for the Pokemon name 'Kakuna'",
             "match": {
-              "location": "us01_Search.js:36"
+              "location": "us01_Search.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 7890000000
+              "duration": 7435000000
             }
           },
           {
@@ -53,11 +53,11 @@
             "line": 16,
             "name": "I should see on the search results just the 'Kakuna'",
             "match": {
-              "location": "us01_Search.js:52"
+              "location": "us01_Search.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 764000000
+              "duration": 1038000000
             }
           },
           {
@@ -68,7 +68,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           }
         ]
@@ -96,7 +96,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3177000000
+              "duration": 2980000000
             }
           },
           {
@@ -105,11 +105,11 @@
             "line": 15,
             "name": "I search for the Pokemon name 'Dragonair'",
             "match": {
-              "location": "us01_Search.js:36"
+              "location": "us01_Search.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 1586000000
+              "duration": 3475000000
             }
           },
           {
@@ -118,11 +118,11 @@
             "line": 16,
             "name": "I should see on the search results just the 'Dragonair'",
             "match": {
-              "location": "us01_Search.js:52"
+              "location": "us01_Search.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 685000000
+              "duration": 816000000
             }
           },
           {
@@ -161,7 +161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2346000000
+              "duration": 2192000000
             }
           },
           {
@@ -170,11 +170,11 @@
             "line": 25,
             "name": "I search for the Pokemon name 'asdfgh'",
             "match": {
-              "location": "us01_Search.js:36"
+              "location": "us01_Search.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 1721000000
+              "duration": 3049000000
             }
           },
           {
@@ -183,11 +183,11 @@
             "line": 26,
             "name": "I should see a message on the search results",
             "match": {
-              "location": "us01_Search.js:57"
+              "location": "us01_Search.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 683000000
+              "duration": 721000000
             }
           },
           {
@@ -226,7 +226,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2154000000
+              "duration": 3891000000
             }
           },
           {
@@ -235,11 +235,11 @@
             "line": 25,
             "name": "I search for the Pokemon name '123456678'",
             "match": {
-              "location": "us01_Search.js:36"
+              "location": "us01_Search.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 2544000000
+              "duration": 1833000000
             }
           },
           {
@@ -248,11 +248,11 @@
             "line": 26,
             "name": "I should see a message on the search results",
             "match": {
-              "location": "us01_Search.js:57"
+              "location": "us01_Search.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 774000000
+              "duration": 730000000
             }
           },
           {
@@ -262,8 +262,7 @@
               "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -295,7 +294,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1919000000
+              "duration": 3424000000
             }
           },
           {
@@ -304,11 +303,11 @@
             "line": 36,
             "name": "I enter the Pokemon name 'Charmander'",
             "match": {
-              "location": "us01_Search.js:40"
+              "location": "us01_Search.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 497000000
+              "duration": 1606000000
             }
           },
           {
@@ -317,11 +316,11 @@
             "line": 37,
             "name": "I use some other page button",
             "match": {
-              "location": "us01_Search.js:44"
+              "location": "us01_Search.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 2301000000
+              "duration": 1170000000
             }
           },
           {
@@ -330,11 +329,11 @@
             "line": 38,
             "name": "I apply my search",
             "match": {
-              "location": "us01_Search.js:48"
+              "location": "us01_Search.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 826000000
+              "duration": 817000000
             }
           },
           {
@@ -343,12 +342,12 @@
             "line": 39,
             "name": "I should see on the search results just the 'Charmander'",
             "match": {
-              "location": "us01_Search.js:52"
+              "location": "us01_Search.js:46"
             },
             "result": {
               "status": "failed",
-              "duration": 10106000000,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -Bulbasaur\n    +Charmander\n\n    at World.<anonymous> (C:\\git\\E2EPokedexFeature\\Test\\steps\\us01_Search.js:54:71)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+              "duration": 10169000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -Bulbasaur\n    +Charmander\n\n    at World.<anonymous> (C:\\git\\E2EPokedexFeature\\Test\\steps\\us01_Search.js:48:71)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
             }
           },
           {
@@ -397,7 +396,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 728000000
+              "duration": 1316000000
             }
           },
           {
@@ -406,11 +405,11 @@
             "line": 9,
             "name": "I generate randons Pokemons",
             "match": {
-              "location": "us02_LoadRandon.js:26"
+              "location": "us02_LoadRandon.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1742000000
+              "duration": 1911000000
             }
           },
           {
@@ -419,11 +418,11 @@
             "line": 10,
             "name": "I should see '12' randons Pokemons",
             "match": {
-              "location": "us02_LoadRandon.js:34"
+              "location": "us02_LoadRandon.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 168000000
             }
           },
           {
@@ -462,7 +461,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1169000000
+              "duration": 1812000000
             }
           },
           {
@@ -471,11 +470,11 @@
             "line": 15,
             "name": "I select the option to load more Pokemons",
             "match": {
-              "location": "us02_LoadRandon.js:30"
+              "location": "us02_LoadRandon.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 2806000000
+              "duration": 3015000000
             }
           },
           {
@@ -484,11 +483,11 @@
             "line": 16,
             "name": "I should see '24' randons Pokemons",
             "match": {
-              "location": "us02_LoadRandon.js:34"
+              "location": "us02_LoadRandon.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 123000000
             }
           },
           {
@@ -538,7 +537,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1078000000
+              "duration": 1581000000
             }
           },
           {
@@ -547,11 +546,11 @@
             "line": 9,
             "name": "I select the Pokemon 'Venusaur'",
             "match": {
-              "location": "us03_PokemonDetails.js:36"
+              "location": "us03_PokemonDetails.js:50"
             },
             "result": {
               "status": "passed",
-              "duration": 6323000000
+              "duration": 6033000000
             }
           },
           {
@@ -560,11 +559,11 @@
             "line": 10,
             "name": "I should see 'Venusaur' information on a new page",
             "match": {
-              "location": "us03_PokemonDetails.js:42"
+              "location": "us03_PokemonDetails.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 297000000
+              "duration": 465000000
             }
           },
           {
@@ -575,6 +574,405 @@
             },
             "result": {
               "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us03---see-pokemon-details;switch-to-the-next-pokemon",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Switch to the next Pokemon",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I'm on the Pokedex Pokemon 'Woobat' page",
+            "match": {
+              "location": "us03_PokemonDetails.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I switch to the next Pokemon",
+            "match": {
+              "location": "us03_PokemonDetails.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2977000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see 'Swoobat' information on a new page",
+            "match": {
+              "location": "us03_PokemonDetails.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "us03---see-pokemon-details;switch-to-the-previous-pokemon",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Switch to the previous Pokemon",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I'm on the Pokedex Pokemon 'Excadrill' page",
+            "match": {
+              "location": "us03_PokemonDetails.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2478000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I switch to the previous Pokemon",
+            "match": {
+              "location": "us03_PokemonDetails.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see 'Drilbur' information on a new page",
+            "match": {
+              "location": "us03_PokemonDetails.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "     As Pokédex user\n     I want be able to sort the Pokemons result by\n     Lowest Number (First), Highest Number(First), A-Z and Z-A\n     So I can see the sorted Pokemons",
+    "keyword": "Feature",
+    "name": "US05 - Sort Pokemon results",
+    "line": 1,
+    "id": "us05---sort-pokemon-results",
+    "tags": [],
+    "uri": "..\\features\\US05_SortCriteria.feature",
+    "elements": [
+      {
+        "id": "us05---sort-pokemon-results;sort-pokemon-results",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Sort Pokemon results",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommonSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2088000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sort the Pokemons by 'Lowest Number (First)'",
+            "match": {
+              "location": "us05_SortCriteria.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2348000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Pokemons properly sorted",
+            "match": {
+              "location": "us05_SortCriteria.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1004000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "us05---sort-pokemon-results;sort-pokemon-results",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Sort Pokemon results",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommonSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sort the Pokemons by 'Highest Number (First)'",
+            "match": {
+              "location": "us05_SortCriteria.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2463000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Pokemons properly sorted",
+            "match": {
+              "location": "us05_SortCriteria.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1448000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "us05---sort-pokemon-results;sort-pokemon-results",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Sort Pokemon results",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommonSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sort the Pokemons by 'A-Z'",
+            "match": {
+              "location": "us05_SortCriteria.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1414000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Pokemons properly sorted",
+            "match": {
+              "location": "us05_SortCriteria.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1453000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "us05---sort-pokemon-results;sort-pokemon-results",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Sort Pokemon results",
+        "tags": [
+          {
+            "name": "@REGRESSION",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I'm on the Pokedex search page",
+            "match": {
+              "location": "CommonSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2660000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sort the Pokemons by 'Z-A'",
+            "match": {
+              "location": "us05_SortCriteria.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1454000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the Pokemons properly sorted",
+            "match": {
+              "location": "us05_SortCriteria.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1027000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

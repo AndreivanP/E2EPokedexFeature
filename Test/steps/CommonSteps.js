@@ -7,12 +7,12 @@
 * prohibited without the written consent of the copyright owner.
 */
 
-import {Given, When, Then, setDefaultTimeout} from 'cucumber';
+import { Given, setDefaultTimeout } from 'cucumber';
 import accessApp from '../utils/accessApp';
 
 
 setDefaultTimeout(75000);
 
-Given('I\'m on the Pokedex search page', async () => {    
+Given('I\'m on the Pokedex search page', async () => {
     await accessApp.accessApp();
 });

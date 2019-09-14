@@ -8,21 +8,33 @@
 */
 
 import BasePage from './basePage';
-import {element, browser} from 'protractor';
+import { element } from 'protractor';
 
 class PokeDetailsPage extends BasePage {
-    constructor () {
+    constructor() {
         super();
         this.pokeName = element(by.css('.pokedex-pokemon-pagination-title div'));
         this.attributesValue = element.all(by.css('.attribute-value'));
-        
+        this.nextPokemon = element(by.css('.icon.icon_arrow_sm_right'));
+        this.previousPokemon = element(by.css('.previous'));
+
     }
 
     async returnPokemonName() {
-        await this.waitElementClickable( this.pokeName);
-        return await this.pokeName.getText();         
-    }    
-  
+        await this.waitElementClickable(this.pokeName);
+        return await this.pokeName.getText();
+    }
+
+    async goToTheNextPokemon() {
+        await this.waitElementClickable(this.nextPokemon);
+        await this.nextPokemon.click();
+    }
+
+    async goToThePreviousPokemon() {
+        await this.waitElementClickable(this.previousPokemon);
+        await this.previousPokemon.click();
+    }
+
 }
 
 export default new PokeDetailsPage();

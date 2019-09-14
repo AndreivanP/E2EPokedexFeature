@@ -7,12 +7,17 @@
 * prohibited without the written consent of the copyright owner.
 */
 
-import {config} from '../steps/config';
-import {browser} from 'protractor';
+import { config } from '../steps/config';
+import { browser } from 'protractor';
 
-export class Access{
+export class Access {
+
     async accessApp() {
-        await browser.get(config.baseUrl);        
+        await browser.get(config.baseUrl);
+    }
+
+    async accessAppOnPokeDetails(pokeName) {
+        await browser.get(config.baseUrl + pokeName);
     }
 }
 

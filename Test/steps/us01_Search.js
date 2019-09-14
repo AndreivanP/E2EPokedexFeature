@@ -10,36 +10,34 @@
 import pokePage from '../pages/pokePage';
 import searchPage from '../pages/searchPage';
 import searchHelper from '../utils/searchHelper';
-import {Given, When, Then, setDefaultTimeout, After} from 'cucumber';
-import accessApp from '../utils/accessApp';
+import { When, Then, setDefaultTimeout } from 'cucumber';
 import { expect } from "chai";
-import { browser } from 'protractor';
 
 setDefaultTimeout(75000);
 
 
-When('I search for the Pokemon name {string}', async (pokeName) => {    
+When('I search for the Pokemon name {string}', async (pokeName) => {
     await searchPage.searchPokemon(pokeName);
 });
 
-When('I enter the Pokemon name {string}', async (pokeName) => {    
+When('I enter the Pokemon name {string}', async (pokeName) => {
     await searchPage.enterPokemonName(pokeName);
 });
 
-When('I use some other page button', async () => {    
+When('I use some other page button', async () => {
     await pokePage.surprisemeBtnClick();
 });
 
-When('I apply my search', async () => {    
+When('I apply my search', async () => {
     await searchPage.hitSearchBtn();
 });
 
 Then('I should see on the search results just the {string}', async (pokeName) => {
-    await searchHelper.waitForUniqueElement(pokePage.pokemonClass);    
+    await searchHelper.waitForUniqueElement(pokePage.pokemonClass);
     expect(await pokePage.getPokemonName()).to.equals(pokeName);
 })
 
 Then('I should see a message on the search results', async () => {
-    expect(await pokePage.getMessageNotFound()).to.equals("No Pokémon Matched Your Search!");    
+    expect(await pokePage.getMessageNotFound()).to.equals("No Pokémon Matched Your Search!");
 })
 

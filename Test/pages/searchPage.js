@@ -8,35 +8,35 @@
 */
 
 import BasePage from './basePage';
-import {element} from 'protractor';
+import { element } from 'protractor';
 import pokePage from '../pages/pokePage';
 
 class SearchPage extends BasePage {
-    constructor ()  {
+    constructor() {
         super();
         this.searchField = element(by.id('searchInput'));
-        this.searchBtn = element(by.css('.button.button-search'));        
+        this.searchBtn = element(by.css('.button.button-search'));
     }
 
     // Search for a Pokemon by enter the name and hit the search button
     async searchPokemon(pokemonName) {
-        await this.waitElementInvisible(pokePage.loader);        
+        await this.waitElementInvisible(pokePage.loader);
         await this.waitElementClickable(this.searchField);
         await this.searchField.sendKeys(pokemonName);
         await this.searchBtn.click();
     }
 
-    async enterPokemonName(pokemonName) {        
+    async enterPokemonName(pokemonName) {
         await this.waitElementClickable(this.searchField);
-        await this.searchField.sendKeys(pokemonName);        
+        await this.searchField.sendKeys(pokemonName);
     }
 
-    async hitSearchBtn() { 
-        this.scrollUp();    
-        await this.waitElementClickable(this.searchBtn);   
-        await this.searchBtn.click();       
+    async hitSearchBtn() {
+        this.scrollUp();
+        await this.waitElementClickable(this.searchBtn);
+        await this.searchBtn.click();
     }
-    
+
 
 }
 
