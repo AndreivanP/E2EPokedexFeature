@@ -9,6 +9,7 @@
 
 import BasePage from './basePage';
 import {element} from 'protractor';
+import pokePage from '../pages/pokePage';
 
 class SearchPage extends BasePage {
     constructor ()  {
@@ -18,7 +19,8 @@ class SearchPage extends BasePage {
     }
 
     // Search for a Pokemon by enter the name and hit the search button
-    async searchPokemon(pokemonName) {        
+    async searchPokemon(pokemonName) {
+        await this.waitElementInvisible(pokePage.loader);        
         await this.waitElementClickable(this.searchField);
         await this.searchField.sendKeys(pokemonName);
         await this.searchBtn.click();

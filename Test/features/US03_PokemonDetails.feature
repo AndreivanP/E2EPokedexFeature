@@ -4,7 +4,7 @@ Feature: US01 - See Pokemon details
      So I can see his details
 
 @REGRESSION
-Scenario: Generate randon Pokemons
+Scenario: Open the Pokemon details page 
     Given I'm on the Pokedex search page
     When I select the Pokemon 'Venusaur'    
     Then I should 'Venusaur' information on a new page

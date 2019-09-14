@@ -34,7 +34,7 @@ class PokePage extends BasePage {
     
     // Get the message when no Pokemon is found
     async getMessageNotFound() {
-        await this.waitElementClickable(this.messagePokeNotFound);   
+        await this.waitElementPresence(this.messagePokeNotFound);   
         let message = this.messagePokeNotFound.getText();
         return message; 
     }  
